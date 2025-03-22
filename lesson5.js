@@ -1,49 +1,49 @@
-// //Fetching the total sales using reduce function
-// let salesdata = [
-//   { product: "Laptop", price: 1200 },
-//   { product: "Keyboard", price: 200 },
-//   { product: "Mouse", price: 100 },
-//   { product: "Printer", price: 500 },
-// ];
+//Fetching the total sales using reduce function
+let salesdata = [
+  { product: "Laptop", price: 1200 },
+  { product: "Keyboard", price: 200 },
+  { product: "Mouse", price: 100 },
+  { product: "Printer", price: 500 },
+];
 
-// let totalSales = salesdata.reduce((acc, sale) => acc + sale.price, 0);
-// console.log(totalSales);
+let totalSales = salesdata.reduce((acc, sale) => acc + sale.price, 0);
+console.log(totalSales);
 
-// //Sum of the elements of an array using reduce function
-// const arr = [0, 1, 2, 3, 4, 5];
-// const sum = arr.reduce((acc, sum) => acc + sum, 0);
-// console.log(sum);
+//Sum of the elements of an array using reduce function
+const arr = [0, 1, 2, 3, 4, 5];
+const sum = arr.reduce((acc, sum) => acc + sum, 0);
+console.log(sum);
 
-// //Fetching the inventories which are having stock <= 30 using filter function
-// let inventory = [
-//   { name: "WidgetA", stock: 30 },
-//   { name: "WidgetB", stock: 50 },
-//   { name: "WidgetC", stock: 20 },
-//   { name: "WidgetD", stock: 10 },
-// ];
+//Fetching the inventories which are having stock <= 30 using filter function
+let inventory = [
+  { name: "WidgetA", stock: 30 },
+  { name: "WidgetB", stock: 50 },
+  { name: "WidgetC", stock: 20 },
+  { name: "WidgetD", stock: 10 },
+];
 
-// let lowStockItems = inventory.filter((item) => {
-//   return item.stock <= 30;
-// });
+let lowStockItems = inventory.filter((item) => {
+  return item.stock <= 30;
+});
 
-// console.log(lowStockItems);
+console.log(lowStockItems);
 
-// //Finding most active user using reduce funtion
+//Finding most active user using reduce funtion
 
-// let userActivity = [
-//   { user: "Alice", activityCount: 45 },
-//   { user: "Bob", activityCount: 35 },
-//   { user: "Sanskar", activityCount: 60 },
-//   { user: "Raunak", activityCount: 100 },
-// ];
+let userActivity = [
+  { user: "Alice", activityCount: 45 },
+  { user: "Bob", activityCount: 35 },
+  { user: "Sanskar", activityCount: 60 },
+  { user: "Raunak", activityCount: 100 },
+];
 
-// //Reduce() takes the first element of the array (Alice) as the initial maxUser.
-// //Then, it iterates over the remaining elements starting from the second element (Bob).
-// let mostActiveUser = userActivity.reduce((maxUser, user) =>
-//   user.activityCount > maxUser.activityCount ? user : maxUser
-// );
+//Reduce() takes the first element of the array (Alice) as the initial maxUser.
+//Then, it iterates over the remaining elements starting from the second element (Bob).
+let mostActiveUser = userActivity.reduce((maxUser, user) =>
+  user.activityCount > maxUser.activityCount ? user : maxUser
+);
 
-// console.log(mostActiveUser);
+console.log(mostActiveUser);
 
 //Build report of expenses
 let expenses = [

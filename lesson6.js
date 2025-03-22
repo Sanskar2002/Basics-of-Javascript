@@ -9,13 +9,13 @@ let person1 = {
 // call() → Calls the function immediately, passing arguments one by one.
 // apply() → Calls the function immediately, passing arguments as an array.
 
-let person2 = {
-    name: "Raunak"
-}
+// let person2 = {
+//     name: "Divya"
+// }
 
-const bindGreet = person1.greet.bind(person2);
-bindGreet();
+// const bindGreet = person1.greet.bind(person2);
+// bindGreet();
 
-person1.greet.apply(person2);
+// person1.greet.apply(person2);
 
-person1.greet.call({name: "mukul"});
+// person1.greet.call({name: "mukul"});
